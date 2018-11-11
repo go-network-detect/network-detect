@@ -17,7 +17,7 @@ func NewNetworkDetector() NetworkDetector {
   }
 }
 
-func (d *NetworkDetector) up() (bool, error) {
+func (d *NetworkDetector) Up() (bool, error) {
   cmd := exec.Command("ip", "a")
   output, err := cmd.Output()
   if err != nil {

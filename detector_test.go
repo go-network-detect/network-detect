@@ -7,7 +7,7 @@ import (
 
 func TestOnline(t *testing.T) {
   d := NewNetworkDetector()
-  value, err := d.up()
+  value, err := d.Up()
   assert.Nil(t, err)
   assert.True(t, value)
 }
